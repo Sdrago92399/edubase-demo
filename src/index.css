@@ -126,8 +126,9 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #1D2226;
-  margin-bottom: 48px;
+  margin-bottom: 33px;
   line-height: 1.5;
+  opacity: 0.6;
 }
 
 .form {
@@ -135,7 +136,8 @@ body {
 }
 
 .form-group {
-  margin-bottom: 32px;
+  margin-bottom: 14px;
+  position: relative;
 }
 
 .form-label {
@@ -145,6 +147,13 @@ body {
   font-size: 13px;
   font-weight: 400;
   margin-bottom: 8px;
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  background-color: white;
+  padding: 0px 4px;
 }
 
 .required-star {
@@ -170,6 +179,7 @@ body {
   color: #1D2226;
   outline: none;
   transition: border-color 0.2s;
+  background: white;
 }
 
 .form-input:focus {
@@ -375,5 +385,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
-  margin-bottom: 40px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
 }
